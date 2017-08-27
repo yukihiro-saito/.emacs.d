@@ -187,3 +187,4 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 (setenv "GIT_ASKPASS" "git-gui--askpass")
 ;; test
+()
