@@ -19,7 +19,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (mew esup magithub magit function-args ddskk sr-speedbar helm helm-gtags company))))
+    (migemo gtags mew esup magithub magit function-args ddskk sr-speedbar helm helm-gtags company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -205,3 +205,17 @@
       'mew-draft-send-message
       'mew-draft-kill
       'mew-send-hook))
+
+;; Setup migemo
+(require 'migemo)
+;; (setq migemo-dictionary "C:/Users/username/AppData/Roaming/.emacs.d/conf/migemo/dict/cp932/migemo-dict")
+(setq migemo-dictionary "c:/msys64/home/Saito/.emacs.d/conf/migemo/dict/utf-8/migemo-dict") ; 文字コードに注意.
+(setq migemo-command "cmigemo")
+(setq migemo-options '("-q" "--emacs" "-i" "\a"))
+(setq migemo-user-dictionary nil)
+(setq migemo-regex-dictionary nil)
+(setq migemo-coding-system 'utf-8-unix) ; 文字コードに注意.
+;; (setq migemo-coding-system 'cp932-unix)
+(load-library "migemo") ; ロードパス指定.
+(migemo-init)
+
