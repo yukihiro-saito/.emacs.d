@@ -19,7 +19,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (migemo gtags mew esup magithub magit function-args ddskk sr-speedbar helm helm-gtags company))))
+    (restart-emacs wget w3m migemo gtags mew esup magithub magit function-args ddskk sr-speedbar helm helm-gtags company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
