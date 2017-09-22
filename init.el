@@ -19,7 +19,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (restart-emacs wget w3m migemo gtags mew esup magithub magit function-args ddskk sr-speedbar helm helm-gtags company))))
+    (helm-ack helm-ag restart-emacs wget w3m migemo gtags mew esup magithub magit function-args ddskk sr-speedbar helm helm-gtags company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -172,6 +172,8 @@
 (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+
+(require 'helm-ag)
 
 ;; Setup speedbar
 (setq speedbar-show-unknown-files t)
