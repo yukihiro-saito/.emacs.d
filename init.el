@@ -94,8 +94,8 @@
 (setq make-backup-files nil)
 (setq delete-auto-save-files t)
 
-(setq hl-line-face 'underline)
-(global-hl-line-mode 1)
+;;(setq hl-line-face 'underline)
+;;(global-hl-line-mode 1)
 
 (setq default-tab-width 4)
 
